@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "8df036ff-4259-4409-8c4d-fc6b883b0e27",
+		"name": "LIBRO",
+		"description": "# Introduction\nWhat does your API do?\n\n# Overview\nThings that the developers should know about\n\n# Authentication\nWhat is the preferred way of using the API?\n\n# Error Codes\nWhat errors and status codes can a user expect?\n\n# Rate limit\nIs there a limit to the number of requests a user can send?",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api/libro/Modificar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Id\": 3,\r\n  \"Titulo\": \"TITULO MODIFICADO\",\r\n  \"AutorPrincipal\": {\r\n    \"Id\": 6\r\n  },\r\n  \"AutorSecundario\": [\r\n    {\r\n      \"Id\": 1003,\r\n      \"ResumenContribucion\":\"Mi resumen1 MODIFICADO \"\r\n    },\r\n    {\r\n      \"Id\": 1004,\r\n      \"ResumenContribucion\":\"Mi resumen2  MODIFICADO \"\r\n    },\r\n    {\r\n      \"Id\": 1005,\r\n      \"ResumenContribucion\":\"Mi resumen3  MODIFICADO  \"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44324/api/libro/Modificar",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44324",
+					"path": [
+						"api",
+						"libro",
+						"Modificar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/libro/Crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Id\": 1,\r\n  \"Titulo\": \"LIBRO CREADO\",\r\n  \"AutorPrincipal\": {\r\n    \"Id\": 3\r\n  },\r\n  \"AutorSecundario\": [\r\n    {\r\n      \"Id\": 1003,\r\n      \"ResumenContribucion\":\"Mi resumen1 CREADO \"\r\n    },\r\n    {\r\n      \"Id\": 1004,\r\n      \"ResumenContribucion\":\"Mi resumen1 CREADO\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44324/api/libro/Crear",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44324",
+					"path": [
+						"api",
+						"libro",
+						"Crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/libro/Eliminar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Id\": 1,\r\n  \"Titulo\": \"LIBRO CREADO\",\r\n  \"AutorPrincipal\": {\r\n    \"Id\": 3\r\n  },\r\n  \"AutorSecundario\": [\r\n    {\r\n      \"Id\": 1003,\r\n      \"ResumenContribucion\":\"Mi resumen1 CREADO \"\r\n    },\r\n    {\r\n      \"Id\": 1004,\r\n      \"ResumenContribucion\":\"Mi resumen1 CREADO\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44324/api/libro/Eliminar?id=3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44324",
+					"path": [
+						"api",
+						"libro",
+						"Eliminar"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

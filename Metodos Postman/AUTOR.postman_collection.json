@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "a8a29b87-2429-45cc-b409-480f0f3edee8",
+		"name": "AUTOR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api/autor/Crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Id\": 1,\r\n  \"CodigoAutor\": \"C0009\",\r\n  \"Nombres\": \"sample string 3\",\r\n  \"ApellidoMaterno\": \"sample string 4\",\r\n  \"ApellidoPaterno\": \"sample string 5\",\r\n  \"Edad\": 6\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44324/api/autor/Crear",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44324",
+					"path": [
+						"api",
+						"autor",
+						"Crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/autor/ListaPaginacion",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44324/api/autor/ListaPaginacion?NroPagina=1&CantidadRegistros=4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44324",
+					"path": [
+						"api",
+						"autor",
+						"ListaPaginacion"
+					],
+					"query": [
+						{
+							"key": "NroPagina",
+							"value": "1"
+						},
+						{
+							"key": "CantidadRegistros",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/autor/Modificar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Id\": 1,\r\n  \"Nombres\": \"valoe1\",\r\n  \"ApellidoMaterno\": \"valoe1\",\r\n  \"ApellidoPaterno\": \"valoe1\",\r\n  \"Edad\": 15\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44324/api/autor/Modificar",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44324",
+					"path": [
+						"api",
+						"autor",
+						"Modificar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/autor/ListarTodos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44324/api/autor/ListarTodos",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44324",
+					"path": [
+						"api",
+						"autor",
+						"ListarTodos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/autor/Eliminar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44324/api/autor/Eliminar?id=1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44324",
+					"path": [
+						"api",
+						"autor",
+						"Eliminar"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/Autor/EliminarLogico",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44324/api/autor/CambiEstado?id=3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44324",
+					"path": [
+						"api",
+						"autor",
+						"CambiEstado"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
